@@ -1,10 +1,5 @@
 # Add  code here!
 def prime?(number)
-  empty_array = [*1...number]
-  empty_array.collect do |value|
-    value % number == 0
-    puts empty_array
-  end
+  empty_array = [*2...number]
+  empty_array.any?{|value| number % value ==0}
 end
-
-prime?(10)
