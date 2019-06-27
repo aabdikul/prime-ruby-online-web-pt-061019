@@ -1,9 +1,8 @@
 # Add  code here!
 def prime?(number)
   empty_array = [1..number]
-
-    true
-  else
-    false
+  empty_array.collect do |value|
+    value % number == 0
+    return true
   end
 end
