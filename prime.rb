@@ -6,3 +6,4 @@ def prime?(number)
   else
   empty_array.none?{|value| number % value == 0}
 end
+end
